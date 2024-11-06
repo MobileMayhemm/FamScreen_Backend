@@ -12,6 +12,10 @@ class FilmApiController extends Controller
     {
         $films = Film::where('kategori_usia', ucfirst($kategori))->get();
 
+        if ($films->isEmpty()) {
+            return response()->json('data kosong');
+        }
+
         return response()->json($films);
     }
 }

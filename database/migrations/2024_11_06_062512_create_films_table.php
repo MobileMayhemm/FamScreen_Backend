@@ -23,7 +23,6 @@ return new class extends Migration
             $table->enum('jenis', ['series', 'film']);
             $table->enum('kategori_usia', ['Anak', 'Remaja', 'Dewasa']);
             $table->string('link_streaming')->nullable();
-
         });
     }
 
