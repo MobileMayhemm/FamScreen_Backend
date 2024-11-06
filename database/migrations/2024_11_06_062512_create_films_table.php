@@ -11,9 +11,19 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('films', function (Blueprint $table) {
+        Schema::create('film', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('poster')->nullable();
+            $table->string('judul');
+            $table->text('deskripsi');
+            $table->year('tahun_rilis');
+            $table->integer('durasi')->comment('Duration in minutes');
+            $table->decimal('rate_imdb', 3, 1)->comment('Rating out of 10');
+            $table->enum('jenis', ['series', 'film']);
+            $table->enum('kategori_usia', ['Anak', 'Remaja', 'Dewasa']);
+            $table->string('link_streaming')->nullable();
+
         });
     }
 
@@ -22,6 +32,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('films');
+        Schema::dropIfExists('film');
     }
 };
