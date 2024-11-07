@@ -15,7 +15,6 @@ class FilmSeeder extends Seeder
     {
         $films = [
             [
-                'poster' => 'poster_anak1.jpg',
                 'judul' => 'Film Anak Pertama',
                 'deskripsi' => 'Deskripsi film anak pertama.',
                 'tahun_rilis' => 2020,
@@ -26,7 +25,6 @@ class FilmSeeder extends Seeder
                 'link_streaming' => 'http://linkstreaminganak1.com',
             ],
             [
-                'poster' => 'poster_assnak1.jpg',
                 'judul' => 'Film Anssak Pertama',
                 'deskripsi' => 'Dessssskripsi film anak pertama.',
                 'tahun_rilis' => 2020,
@@ -37,7 +35,6 @@ class FilmSeeder extends Seeder
                 'link_streaming' => 'http://linkstreaminganak1.com',
             ],
             [
-                'poster' => 'poster_remaja1.jpg',
                 'judul' => 'Film Remaja Pertama',
                 'deskripsi' => 'Deskripsi film remaja pertama.',
                 'tahun_rilis' => 2018,
@@ -48,7 +45,6 @@ class FilmSeeder extends Seeder
                 'link_streaming' => 'http://linkstreamingremaja1.com',
             ],
             [
-                'poster' => 'poster_dewasa1.jpg',
                 'judul' => 'Film Dewasa Pertama',
                 'deskripsi' => 'Deskripsi film dewasa pertama.',
                 'tahun_rilis' => 2022,
